@@ -1,0 +1,59 @@
+.return{
+	width: 100px;
+	height: 100px;
+	color: white;
+	border-radius: 50%;
+	background-color: #ff9501;
+	font-size: 25px;
+  border: none;
+}
+
+#new-task{
+  border: none;
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+}
+#add-task{
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+
+}
+#add-task:focus{
+  background-color: #ff9501;
+}
+#clear-task-list:focus{
+  background-color: #ff9501;
+}
+#clear-task-list{
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+
+}
+
+header {
+  width: 100%;
+  font-size: 24px;
+ 
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,
+    rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    text-align: center;
+  }
+  ul{
+    color: white;
+  }

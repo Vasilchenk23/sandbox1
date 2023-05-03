@@ -1,0 +1,157 @@
+.center-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	/****** center box
+	width: 300px;
+	height: 300px;
+	border: solid 1px #aaa;
+	******/
+}
+body {
+	background-color: #202628;
+}
+.loader-circle-8 {
+	position: relative;
+	margin: 0 auto;
+	width: 70px;
+}
+.loader-circle-8:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+.circular {
+	animation: rotate 2s linear infinite;
+	height: 100%;
+	transform-origin: center center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.path {
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+	stroke-linecap: round;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
+@keyframes color {
+	100%, 0% {
+		stroke: #d82929;
+	}
+	40% {
+		stroke: #0057e7;
+	}
+	66% {
+		stroke: #cad829;
+	}
+	80%,
+	90% {
+		stroke: #2844d3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.return{
+	width: 100px;
+	height: 100px;
+	color: white;
+	border-radius: 50%;
+	background-color: #ff9501;
+	font-size: 25px;
+    border: none;
+}
+
+body{
+    background-color: black;
+}
+
+.wrapper{
+    background-color: rgb(89, 125, 36);
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+
+}
+#city-input{
+    margin: 0px 0px 20px 0px;
+    width: 170px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+#search-btn{
+    width: 100px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+}
+#search-btn:focus{
+    
+    background-color: orange;
+    width: 100px;
+    height: 36px;
+}
+.weather_city{
+    color: white;
+    font-size: 30px;
+    margin: auto 1% 10px;
+    font-weight:bold
+}
+.weather_status{
+    color: white;
+    margin: auto 1% ;
+    font-size: 20px;
+}
+.weather_temp{
+    color: white;
+    font-size: 30px;
+    margin: auto 1% 10px;
+    font-weight:bold;
+}
+.weather_feels-like{
+    color: white;
+    margin: auto 1% ;
+    font-size: 20px;
+}
+.weather_icon{
+    margin: -40px 0px 0px 300px;
+}
